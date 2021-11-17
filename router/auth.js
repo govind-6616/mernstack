@@ -21,10 +21,6 @@ const Authenticate=require("../middleware/Authenticate.js");
 
 // createToken();
 
-route.get('/', (req, res) => {
-    console.log("hello from router side");
-    res.send("hello from  router side");
-})
 route.post("/register",(req, res) => {
     const { username,name,email, password, cpassword, city, mobile, qualification,
         jobprofile,gender,Languages,Frameworks,Databases,projectLinks} = req.body;

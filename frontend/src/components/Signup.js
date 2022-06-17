@@ -51,7 +51,7 @@ const Signup = () => {
         else {
             document.getElementById('para').style.color = "green";
             document.getElementById('para').innerHTML = "Successful Registeration";
-            window.alert("successful registeration react");
+            window.alert("successful registeration ");
             history.push('/Login');
         }
 
@@ -114,6 +114,7 @@ const Signup = () => {
                             onChange={inputEvent} name="Frameworks" value={nam.Frameworks} />
                              <input type="text" style={{width:"80%"}} placeholder="Databases : MongoDB / Mysql / Firebase"
                             onChange={inputEvent} name="Databases" value={nam.Databases} /> */}
+                            
                                <input type="text" placeholder="Project Links (optional)"
                           onChange={inputEvent} name="projectLinks" value={nam.projectLinks} />
                         <button type="submit"

@@ -42,13 +42,13 @@ const Login = () => {
             document.getElementById('para').style.color="yellow";
     document.getElementById('para').innerHTML="Successful Login";
             window.alert("successful Login");            
-            // history.push('/About'); 
+            history.push('/About'); 
             }
             else{
               
                 document.getElementById('para').style.color="Red";
     document.getElementById('para').innerHTML="Invalid Credentials";
-                window.alert("failed Login react");
+                window.alert("failed Login ");
             }
     }
 

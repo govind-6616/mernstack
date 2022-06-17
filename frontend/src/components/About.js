@@ -4,6 +4,8 @@ import "./nav.css";
 const About = () => {
     const history = useHistory();
     const [userData, setUserData] = useState({});
+
+    
     const callAbout = async () => {
         try {
             const res = await fetch('/about', {
@@ -36,7 +38,7 @@ const About = () => {
     }, []);
     return (
         <>
-            <div style={{margin:"5% auto",width:"45%",border:"1px solid blue",boxShadow:"15px 18px 15px 8px black;"}}>
+            <div id="input" style={{margin:"5% auto",width:"45%",border:"1px solid blue",boxShadow:"15px 18px 15px 8px black;"}}>
                 <div className="about-head">
                     <h1>{userData.name}</h1>
                     <p>{userData.jobprofile}</p>
@@ -94,6 +96,7 @@ const About = () => {
                     </tr>
                 </table>
             </div>
+            
         </>
     )
 }
